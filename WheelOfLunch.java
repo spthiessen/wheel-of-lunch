@@ -1,18 +1,38 @@
 import java.util.*;
+import java.io.*;
 
 public class WheelOfLunch {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 
+		//Check for the restaurants.txt file
+		/*
+		if(restaurant.exists()) {
+		     log(myfile + " exists. length : " + myfile.length());
+		     FileReader fr = new FileReader(restaurant.txt); 
+		}
+		*/
+
+		
 		//The list of restaurants
 		ArrayList<String> restaurant = new ArrayList<String>();
+
+		//Scanner Object
+		Scanner s = new Scanner(new File("restfile.txt"));
 		
+		while (s.hasNext() ) {
+			restaurant.add(s.nextLine() );
+			
+		}
+		
+		s.close();
+		
+		/*
 		restaurant.add("Montana's");
 		restaurant.add("Pizza Hut");
 		restaurant.add("Venice House on 2nd");
 		restaurant.add("Boston's Pizza");
-		restaurant.add("Pizza Hut");
 		restaurant.add("McDonald's");
 		restaurant.add("Wendy's");
 		restaurant.add("Mucho Burrito");
@@ -38,7 +58,8 @@ public class WheelOfLunch {
 		restaurant.add("Quizno's");
 		restaurant.add("Mr. Sub");
 		restaurant.add("Selena's Donair");
-		
+		*/
+
 		int listLength = restaurant.size();
 		
 		System.out.println("There are " + listLength + " restaurants in our list.");
@@ -48,7 +69,6 @@ public class WheelOfLunch {
 		int lunch = random.nextInt(listLength);
 		
 		System.out.println("Let's eat at "+ restaurant.get(lunch) +"." );
-		
 		
 	}
 
