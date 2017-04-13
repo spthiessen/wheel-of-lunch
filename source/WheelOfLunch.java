@@ -41,11 +41,9 @@ public class WheelOfLunch {
 		int lunch = random.nextInt(listLength);
 		
 		//Display all the information
-		WheelOfLunch.infoBox("Wheel of Lunch, Version " + versionNumber + ".", "What Version are we Running?");
-		WheelOfLunch.infoBox("Generating list of restaurants from " + url + ".", "Where is the List?");
-		WheelOfLunch.infoBox("There are " + listLength + " restaurants in our list.", "How Many Restarants?");
-		WheelOfLunch.infoBox("Let's eat at "+ restaurant.get(lunch) +".", "Where To Eat!");
 		
+		WheelOfLunch.infoBox("Wheel of Lunch, Version " + versionNumber + "\nGenerating list of restaurants from " + url + "\nThere are " + listLength + " restaurants in our list\nLet's eat at "+ restaurant.get(lunch) +".", "Wheel of Lunch");
+
 	}
 
 }
