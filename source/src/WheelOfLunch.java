@@ -14,13 +14,31 @@ public class WheelOfLunch {
 		// TODO Auto-generated method stub
 		
 		//Version Number
-		String versionNumber = "0.0.2b";
+		String versionNumber = "0.0.3";
+		String appName = "Wheel of Lunch";
+		
+		//Pick which restaurant list to use
+		
+		String[] restListChoices = {"Prince Albert", "IMS"};
+		
+		String restList = (String) JOptionPane.showInputDialog(null, "Which List Would You Like to Use?",
+				appName, JOptionPane.QUESTION_MESSAGE, null,
+				restListChoices,
+				restListChoices[1]);
+		
+		String userSelection;
+		
+		if (restList == "IMS"){
+			userSelection = "http://www.nekec.com/wheel-of-lunch/imsrestfile.txt";
+		} else{
+			userSelection = "http://www.nekec.com/wheel-of-lunch/parestfile.txt";
+		}
 		
 		//The list of restaurants
 		ArrayList<String> restaurant = new ArrayList<String>();
 
 		//Load the external file containing the list of restaurants
-		URL url = new URL ("http://www.nekec.com/wheel-of-lunch/restfile.txt");
+		URL url = new URL (userSelection);
 		
 		URLConnection conn = url.openConnection();
 
@@ -42,7 +60,7 @@ public class WheelOfLunch {
 		
 		//Display all the information
 		
-		WheelOfLunch.infoBox("Wheel of Lunch, Version " + versionNumber + "\nGenerating list of restaurants from " + url + "\nThere are " + listLength + " restaurants in our list\nLet's eat at "+ restaurant.get(lunch) +".", "Wheel of Lunch");
+		WheelOfLunch.infoBox("Wheel of Lunch, Version " + versionNumber + "\nWe are using the " + restList + " list of restaurants\nThere are " + listLength + " restaurants in our list\nLet's eat at "+ restaurant.get(lunch) +".", appName);
 
 	}
 
