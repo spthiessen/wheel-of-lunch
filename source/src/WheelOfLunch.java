@@ -14,25 +14,25 @@ public class WheelOfLunch {
 		// TODO Auto-generated method stub
 		
 		//Version Number
-		String versionNumber = "0.0.3";
+		String versionNumber = "0.0.3b";
 		String appName = "Wheel of Lunch";
 		
 		//Pick which restaurant list to use
 		
-		String[] restListChoices = {"Prince Albert", "IMS"};
+		String[] restListChoices = {"IMS", "Prince Albert", "Fast Food"};
 		
 		String restList = (String) JOptionPane.showInputDialog(null, "Which List Would You Like to Use?",
 				appName, JOptionPane.QUESTION_MESSAGE, null,
 				restListChoices,
-				restListChoices[1]);
+				restListChoices[0]);
 		
 		String userSelection;
 		
-		if (restList == "IMS"){
-			userSelection = "http://www.nekec.com/wheel-of-lunch/imsrestfile.txt";
-		} else{
+		if (restList == "Prince Albert"){
 			userSelection = "http://www.nekec.com/wheel-of-lunch/parestfile.txt";
-		}
+		} else if (restList == "Fast Food"){
+			userSelection = "http://www.nekec.com/wheel-of-lunch/ffrestfile.txt";
+		} else userSelection = "http://www.nekec.com/wheel-of-lunch/imsrestfile.txt";
 		
 		//The list of restaurants
 		ArrayList<String> restaurant = new ArrayList<String>();
