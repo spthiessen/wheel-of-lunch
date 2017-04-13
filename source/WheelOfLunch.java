@@ -13,6 +13,9 @@ public class WheelOfLunch {
 	public static void main(String[] args) throws FileNotFoundException, MalformedURLException, IOException {
 		// TODO Auto-generated method stub
 		
+		//Version Number
+		String versionNumber = "0.0.2b";
+		
 		//The list of restaurants
 		ArrayList<String> restaurant = new ArrayList<String>();
 
@@ -38,6 +41,7 @@ public class WheelOfLunch {
 		int lunch = random.nextInt(listLength);
 		
 		//Display all the information
+		WheelOfLunch.infoBox("Wheel of Lunch, Version " + versionNumber + ".", "What Version are we Running?");
 		WheelOfLunch.infoBox("Generating list of restaurants from " + url + ".", "Where is the List?");
 		WheelOfLunch.infoBox("There are " + listLength + " restaurants in our list.", "How Many Restarants?");
 		WheelOfLunch.infoBox("Let's eat at "+ restaurant.get(lunch) +".", "Where To Eat!");
