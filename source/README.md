@@ -8,5 +8,5 @@ A tool for picking where to eat
 
 <h1>To-Do List</h1>
 <ul>
-	<li>Give the list choices.</li>
+	<li>Put the app into an android app</li>
 </ul>
