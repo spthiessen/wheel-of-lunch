@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wheel of Lunch - Alpha</string>
+    <string name="select_list">Select a List</string>
+    <string name="ims">IMS</string>
+    <string name="prince_albert">Prince Albert</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="result_page-title">Wheel of Lunch Results</string>
+    <string name="lets_eat">Let\'s eat at</string>
+</resources>
