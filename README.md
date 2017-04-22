@@ -6,6 +6,7 @@ A tool for picking where to eat
   <li>Run the JAR file and the program will pick a restaurant to eat at!</li>
 </ul>
 
+# To-Do List
 <ul>
 <li>Add the ability to view the whole list</li>
 </ul>
