@@ -4,6 +4,7 @@
     <string name="ims">IMS</string>
     <string name="prince_albert">Prince Albert</string>
     <string name="fast_food">Fast Food</string>
-    <string name="result_page-title">Wheel of Lunch Results</string>
+    <string name="result_page_title">Wheel of Lunch Results</string>
     <string name="lets_eat">Let\'s eat at</string>
+    <string name="submit">Submit</string>
 </resources>

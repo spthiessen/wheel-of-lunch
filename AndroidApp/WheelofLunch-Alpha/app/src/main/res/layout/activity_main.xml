@@ -10,53 +10,54 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="24dp"
+        android:text="@string/submit"
         app:layout_constraintLeft_toLeftOf="@+id/radioButton3"
         app:layout_constraintRight_toRightOf="@+id/radioButton3"
-        android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
 
     <RadioButton
         android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RadioButton"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        android:checked="false"
+        android:text="@string/fast_food"
         app:layout_constraintLeft_toLeftOf="@+id/radioButton2"
-        app:layout_constraintRight_toRightOf="@+id/radioButton2" />
+        app:layout_constraintRight_toRightOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RadioButton"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        android:text="@string/prince_albert"
         app:layout_constraintLeft_toLeftOf="@+id/radioButton"
-        app:layout_constraintRight_toRightOf="@+id/radioButton" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintRight_toRightOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RadioButton"
-        app:layout_constraintLeft_toLeftOf="@+id/editText2"
-        app:layout_constraintRight_toRightOf="@+id/editText2"
-        android:layout_marginTop="23dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        android:text="@string/ims"
+        tools:layout_editor_absoluteY="158dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/select_list"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
